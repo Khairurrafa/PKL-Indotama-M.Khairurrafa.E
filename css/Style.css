@@ -1,0 +1,395 @@
+/* Link Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+section {
+  padding-top: 2rem;
+}
+
+/* login */
+.login .row {
+  background: white;
+  border-radius: 30px;
+}
+.login img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.login h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  color: #a76922;
+}
+.inp {
+  height: 50px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+}
+.btn1 {
+  width: 50%;
+  border-radius: 50px;
+  background-color: #57a5df;
+  border-color: #57a5df;
+}
+.login a {
+  font-size: 2rem;
+  color: #57a5df;
+}
+.login .col-lg-10 {
+  padding-left: 7rem;
+  padding-right: -7rem;
+}
+/* login End */
+
+/* Navbar */
+nav,
+footer {
+  background-color: #57a5df;
+}
+.logo {
+  width: 3rem;
+}
+#i-search,
+#b-search {
+  border-radius: 50px;
+}
+#cart,
+#notif {
+  color: white;
+  font-size: 25px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+#profile {
+  color: white;
+  font-size: 27px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.n-cart,
+.n-notif {
+  text-align: center;
+  font-size: 10px;
+  margin-left: -25px;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
+  height: 16px;
+  width: 16px;
+}
+.navbar-toggler {
+  border-radius: 50px;
+  font-size: 15px;
+}
+/* Navbar End */
+
+/* Slider */
+#carouselExampleInterval {
+  padding-top: 0.5rem;
+  margin: auto;
+}
+.geser {
+  border-radius: 5px;
+}
+#slider {
+  background-color: #d4ede9;
+}
+/* Slider End */
+
+/* Kategori */
+#kategori {
+  background-color: #f3f3f3;
+  padding-bottom: 2rem;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #686868;
+}
+.g-kat {
+  width: 100px;
+}
+.t_kat {
+  margin-top: 20px;
+}
+/* Kategori End */
+
+/* Banner */
+#banner {
+  background-color: #d4ede9;
+}
+.banner {
+  margin: auto;
+}
+/* Banner End */
+
+/* Produk Pilihan */
+#p-pilihan {
+  background-color: #f3f3f3;
+  padding-bottom: 2rem;
+}
+.cb-pilihan {
+  margin-top: -10px;
+}
+.harga-dc {
+  font-size: 14px;
+  color: rgb(196, 64, 64);
+  margin-bottom: -2px;
+}
+.harga-normal {
+  font-size: 11px;
+  color: lightgray;
+}
+.btn-pp {
+  background-color: #57a5df;
+  border-color: #57a5df;
+  display: block;
+  padding: 1px;
+}
+.card-text {
+  margin-bottom: 10px;
+}
+/* Produk Pilihan End */
+
+/* Produk Promo */
+#p-promo {
+  background-color: #f3f3f3;
+  padding-bottom: 2rem;
+}
+.ppromo {
+  margin-bottom: 1px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: rgb(196, 64, 64);
+}
+/* Produk Promo End */
+
+/* Berita */
+#berita {
+  background-color: #f3f3f3;
+  padding-bottom: 2rem;
+}
+.berita {
+  cursor: pointer;
+}
+/* Berita End */
+
+/* Detail Produk */
+.b-dp {
+  background-color: #f3f3f3;
+}
+.d-produk {
+  padding-top: 80px;
+}
+.d-produk .col-12 img {
+  padding: 0;
+}
+.d-produk .col-12 {
+  padding: 20px;
+}
+.d-produk h4 {
+  margin: 20px 0;
+  font-weight: bold;
+  color: rgb(196, 64, 64);
+  font-size: 18px;
+}
+.d-produk select {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border: 1px solid #57a5df;
+}
+.d-produk input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #57a5df;
+}
+input:focus {
+  outline: none;
+}
+.btn-dp {
+  display: block;
+  border-radius: 50px;
+  background-color: #57a5df;
+  border-color: #57a5df;
+}
+.d-produk h3 {
+  margin-top: 25px;
+  font-size: 20px;
+}
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.d-produk h1 {
+  font-size: 30px;
+  line-height: 32px;
+}
+.col-12 .sticky-top {
+  top: 60px;
+}
+.keterangan {
+  margin-bottom: 0.3rem;
+  display: flex;
+}
+.j-keterangan {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.875rem;
+  width: 6.25rem;
+}
+.j-keterangan div {
+  display: block;
+}
+/* Detail Produk End */
+
+/* Cart Item */
+#keranjang {
+  background-color: #f3f3f3;
+}
+.cart-page {
+  margin: 80px auto;
+}
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-page th {
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background-color: #57a5df;
+  font-weight: normal;
+}
+.cart-page td {
+  padding: 10px 5px;
+}
+.cart-page td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+.cart-page .hapus {
+  color: rgb(196, 64, 64);
+  font-size: 12px;
+  text-decoration: none;
+}
+.cart-page td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.cart-page td p {
+  margin-bottom: 0;
+}
+.total-harga {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-harga table {
+  border-top: 3px solid #57a5df;
+  width: 100%;
+  max-width: 350px;
+}
+.cart-page td:last-child {
+  text-align: right;
+}
+.cart-page th:last-child {
+  text-align: right;
+}
+.t-jumlah {
+  width: 180px;
+}
+.btn-cart {
+  border-radius: 50px;
+  background-color: #57a5df;
+  border-color: #57a5df;
+}
+/* Cart Item End */
+
+/* Checkout */
+#checkout {
+  background-color: #f3f3f3;
+}
+.alamat table {
+  border-top: 3px solid #57a5df;
+}
+.alamat th {
+  text-align: left;
+  padding: 5px;
+  color: #57a5df;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.alamat table a {
+  text-decoration: none;
+  color: rgb(196, 64, 64);
+}
+.alamat td:last-child {
+  text-align: center;
+}
+.alamat th:last-child {
+  text-align: left;
+}
+.kurir td i {
+  color: #57a5df;
+}
+/* Checkout End */
+
+/* Bukti Transaksi */
+#bukti_transaksi {
+  background-color: #f3f3f3;
+}
+#bukti_transaksi .cart-page {
+  margin: 50px auto;
+}
+/* Bukti Transaksi End */
+/* display */
+@media screen and (max-width: 1199px) {
+  .login img {
+    border-bottom-left-radius: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .cari {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-produk h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .cart-info p {
+    display: none;
+  }
+  .t-jumlah {
+    width: 120px;
+  }
+  .total-harga {
+    justify-content: center;
+  }
+  .login img {
+    display: none;
+  }
+  .login .col-lg-10 {
+    padding: 0;
+  }
+}
+/* display end */

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/Style.css" />
+
+    <!-- icon bootststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/logo/logo-removebg-preview.png" />
+    <title>Rafa Olshop</title>
+  </head>
+  <body id="checkout">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="landing_page.html"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landing_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Tentang Kami</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2 cari" id="i-search" type="search" placeholder="Cari" aria-label="Search" />
+          </form>
+          <form class="d-flex text-end">
+            <a href="cart.html" class="btn space1" id="cart"><i class="bi bi-cart-plus"></i></a>
+            <p class="n-cart space1">3</p>
+            <a class="btn space1" id="notif"><i class="bi bi-bell"></i></a>
+            <p class="n-notif space1">1</p>
+            <a class="btn space1" id="profile" href="login_page.html"><i class="bi bi-person"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Detail Pesanan  -->
+    <section id="checkout">
+      <div class="container cart-page">
+        <div class="alamat mb-3 bg-light">
+          <table>
+            <tr>
+              <th>Penerima</th>
+              <th><i class="bi bi-geo-alt-fill me-1"></i>Alamat</th>
+            </tr>
+            <tr>
+              <td>Rafa</td>
+              <td>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</td>
+              <td><a href="">Ubah</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="bg-light">
+          <table>
+            <tr>
+              <th>Produk</th>
+              <th class="t-jumlah">Jumlah</th>
+              <th>Subtotal</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src="img/cart/sc1.jpg" />
+                  <div>
+                    <p>Kaos | Screamous TIME FLIES NAVY BLUE</p>
+                    <small>Harga: Rp70.000</small>
+                  </div>
+                </div>
+              </td>
+              <td>1</td>
+              <td>Rp70.000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src="img/cart/sweater1.jpg" />
+                  <div>
+                    <p>Sweater | Wanita Tanpa Lengan</p>
+                    <small>Harga: Rp250.000</small>
+                  </div>
+                </div>
+              </td>
+              <td>1</td>
+              <td>Rp250.000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src="img/cart/shoes1.jpg" />
+                  <div>
+                    <p>Sepatu | Vans Old Skool</p>
+                    <small>Harga: Rp560.000</small>
+                  </div>
+                </div>
+              </td>
+              <td>1</td>
+              <td>Rp560.000</td>
+            </tr>
+          </table>
+        </div>
+        <div class="kurir bg-light mt-3 mb-3">
+          <table>
+            <tr>
+              <td><i class="bi bi-truck me-2 fs-4"></i>Metode Pengiriman</td>
+              <td>
+                <select>
+                  <option>Pilih Kurir</option>
+                  <option>JNE</option>
+                  <option>J&T</option>
+                  <option>Gojek</option>
+                  <option>Grab</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-wallet2 me-2 fs-4"></i>Metode Pembayaran</td>
+              <td>
+                <select>
+                  <option>Pilih Metode</option>
+                  <option>BRI</option>
+                  <option>BNI</option>
+                  <option>Alfamart</option>
+                  <option>Indomart</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="total-harga bg-light">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>Rp880.000</td>
+            </tr>
+            <tr>
+              <td>Ongkos kirim</td>
+              <td>Rp10.000</td>
+            </tr>
+            <tr>
+              <td>Pajak</td>
+              <td>Rp10.000</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>Rp900.000</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a href="bukti_transaksi.html" class="btn btn-primary btn-cart">Pesan Sekarang</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Detail Pesanan End  -->
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" id="footer">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque in enim atque rerum dolore! Consequatur aliquam fugit assumenda perferendis provident. Iste molestiae quas accusamus magnam.</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Alamat</h5>
+            <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+            <p><i class="bi bi-clock me-2"></i>08:00-21:00</p>
+            <p><i class="bi bi-telephone me-2"></i>0823 1234 1234</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Keunggulan</h5>
+            <p><i class="bi bi-truck me-2"></i>Gratis Ongkir</p>
+            <p><i class="bi bi-percent me-2"></i>Banyak Discount</p>
+            <p><i class="bi bi-hand-thumbs-up me-2"></i>100% Original</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Kategori</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Pria</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Wanita</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Aksesoris</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Sepatu</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Toko Online</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Shopee</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Tokopedia</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Bukalapak</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Lazada</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright ©2021 All rights reserved by :</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>

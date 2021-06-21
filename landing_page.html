@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/Style.css" />
+
+    <!-- icon bootststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/logo/logo-removebg-preview.png" />
+    <title>Rafa Olshop</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#p-pilihan">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kategori">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Tentang Kami</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2 cari" id="i-search" type="search" placeholder="Cari" aria-label="Search" />
+          </form>
+          <form class="d-flex text-end">
+            <a href="cart.html" class="btn space1" id="cart"><i class="bi bi-cart-plus"></i></a>
+            <p class="n-cart space1">3</p>
+            <a class="btn space1" id="notif"><i class="bi bi-bell"></i></a>
+            <p class="n-notif space1">1</p>
+            <a class="btn space1" id="profile" href="login_page.html"><i class="bi bi-person"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Slider -->
+    <section id="slider" class="mt-5 pb-4">
+      <div id="carouselExampleInterval" class="carousel slide col-md-7" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="img/slider/Clothing1.jpg" class="d-block w-100 geser" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/slider/Sepatu.jpg" class="d-block w-100 geser" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/slider/Sepatu cewe.jpg" class="d-block w-100 geser" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/slider/Jewelry.jpg" class="d-block w-100 geser" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev pt-4" id="button" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <class class="carousel-control-next pt-4" id="button" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </class>
+      </div>
+    </section>
+    <!-- Slider End -->
+
+    <!-- Kategori -->
+    <section id="kategori">
+      <div class="container">
+        <div class="row mb-3 text-center">
+          <h3>Kategori</h3>
+          <hr />
+        </div>
+        <div class="row justify-content-center">
+          <div class="card mb-3 col-xs-1 ms-2 me-2" style="max-width: 320px; cursor: pointer" onclick="window.location='#';">
+            <div class="row g-0">
+              <div class="col">
+                <img class="g-kat" src="img/kategori/benjamin-rascoe-Ci_fZ5cL9Jo-unsplash(1).jpg" alt="..." />
+              </div>
+              <div class="col-7">
+                <div class="card-body t_kat">
+                  <h5 class="card-title">Pakaian Pria</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 col-xs-1 ms-2 me-2" style="max-width: 320px; cursor: pointer" onclick="window.location='#';">
+            <div class="row g-0">
+              <div class="col">
+                <img class="g-kat" src="img/kategori/ussama-azam-zzRdlv977ys-unsplash(1).jpg" alt="..." />
+              </div>
+              <div class="col-7">
+                <div class="card-body t_kat">
+                  <h5 class="card-title">Pakaian Wanita</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 col-xs-1 ms-2 me-2" style="max-width: 320px; cursor: pointer" onclick="window.location='#';">
+            <div class="row g-0">
+              <div class="col">
+                <img class="g-kat" src="img/kategori/sabrinna-ringquist-NhrcL_C0sFA-unsplash(1).jpg" alt="..." />
+              </div>
+              <div class="col-7">
+                <div class="card-body">
+                  <h5 class="card-title t_kat">Aksesoris</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 col-xs-1 ms-2 me-2" style="max-width: 320px; cursor: pointer" onclick="window.location='#';">
+            <div class="row g-0">
+              <div class="col">
+                <img class="g-kat" src="img/kategori/Sepatu.jpg" alt="..." />
+              </div>
+              <div class="col-7">
+                <div class="card-body">
+                  <h5 class="card-title t_kat">Sepatu</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori End -->
+
+    <!-- Banner -->
+    <div class="pt-4 pb-4" id="banner">
+      <div class="container">
+        <div class="banner">
+          <div class="card">
+            <a href="#"><img src="img/banner/yasgd.png" class="card-img-top" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Produk Pilihan -->
+    <section id="p-pilihan">
+      <div class="container">
+        <h3 class="mb-3">Produk Pilihan</h3>
+        <hr />
+        <div class="row row-cols-2 row-cols-md-6">
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/sc1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                <p class="card-text text-truncate">Kaos | Screamous TIME FLIES NAVY BLUE</p>
+                <a href="detail_product.html" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shirt1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp200.000</span> Rp120.000</p>
+                <p class="card-text text-truncate">Kemeja | Pria Santai</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/sepatu hak1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp330.000</p>
+                <p class="card-text text-truncate">Sepatu | Hak Wanita</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/sweater1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                <p class="card-text text-truncate">Sweater | Wanita Tanpa Lengan</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shoes1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp560.000</p>
+                <p class="card-text text-truncate">Sepatu | Vans Old Skool</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/tshirt2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp130.000</span> Rp75.000</p>
+                <p class="card-text text-truncate">Kaos | Stussy</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/tshirt3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                <p class="card-text text-truncate">Kaos | Pria Hitam Polos</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shoes2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp2.000.000</span> Rp1.600.000</p>
+                <p class="card-text text-truncate">Sepatu | Nike</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/jewelry1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp500.000</span> Rp350.000</p>
+                <p class="card-text text-truncate">Gelang | Emas</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/tshirt1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp72.000</p>
+                <p class="card-text text-truncate">Kaos | Pria Biru</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shirt2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                <p class="card-text text-truncate">Kemeja | Putih Hijau</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shoes3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp950.000</p>
+                <p class="card-text text-truncate">Sepatu | Nike</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Pilihan End -->
+
+    <!-- Produk Promo -->
+    <section id="p-promo">
+      <div class="container">
+        <h3 class="mb-3">Promo Bulan Ini</h3>
+        <hr />
+        <div class="row row-cols-2 row-cols-md-6">
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shirt1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp200.000</span> Rp120.000</p>
+                <p class="card-text text-truncate">Kemeja | Pria Santai</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shirt2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                <p class="card-text text-truncate">Kemeja | Putih Hijau</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/jewelry1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp500.000</span> Rp350.000</p>
+                <p class="card-text text-truncate">Gelang | Emas</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/tshirt2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp130.000</span> Rp75.000</p>
+                <p class="card-text text-truncate">Kaos | Stussy</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/sweater1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                <p class="card-text text-truncate">Sweater | Wanita Tanpa Lengan</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col pt-2">
+            <div class="card">
+              <img src="img/p_pilihan/shoes2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body cb-pilihan">
+                <p class="ppromo">promo</p>
+                <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp2.000.000</span> Rp1.600.000</p>
+                <p class="card-text text-truncate">Sepatu | Nike</p>
+                <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Promo End -->
+
+    <!-- Berita -->
+    <section id="berita">
+      <div class="container">
+        <h3 class="mb-3">Berita</h3>
+        <hr />
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4 mb-3 berita" onclick="window.location='#';">
+            <div class="card">
+              <img src="img/berita/eric-parks-TsNwtbCih0M-unsplash.jpg" class="card-img-top" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea autem at architecto veniam vel necessitatibus perferendis enim provident nemo!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 berita" onclick="window.location='#';">
+            <div class="card">
+              <img src="img/berita/eric-parks-TsNwtbCih0M-unsplash.jpg" class="card-img-top" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea autem at architecto veniam vel necessitatibus perferendis enim provident nemo!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 berita" onclick="window.location='#';">
+            <div class="card">
+              <img src="img/berita/eric-parks-TsNwtbCih0M-unsplash.jpg" class="card-img-top" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea autem at architecto veniam vel necessitatibus perferendis enim provident nemo!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Berita End -->
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" id="footer">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque in enim atque rerum dolore! Consequatur aliquam fugit assumenda perferendis provident. Iste molestiae quas accusamus magnam.</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Alamat</h5>
+            <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+            <p><i class="bi bi-clock me-2"></i>08:00-21:00</p>
+            <p><i class="bi bi-telephone me-2"></i>0823 1234 1234</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Keunggulan</h5>
+            <p><i class="bi bi-truck me-2"></i>Gratis Ongkir</p>
+            <p><i class="bi bi-percent me-2"></i>Banyak Discount</p>
+            <p><i class="bi bi-hand-thumbs-up me-2"></i>100% Original</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Kategori</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Pria</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Wanita</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Aksesoris</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Sepatu</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Toko Online</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Shopee</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Tokopedia</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Bukalapak</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Lazada</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright ©2021 All rights reserved by :</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>
