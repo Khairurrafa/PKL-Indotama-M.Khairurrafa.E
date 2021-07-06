@@ -12,7 +12,11 @@
     <!-- icon bootststrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+    <!-- JQuery -->
+    <script src="js/jquery-3.6.0.js"></script>
+
     <link rel="shortcut icon" href="img/logo/logo-removebg-preview.png" />
+
     <title>Rafa Olshop</title>
   </head>
   <body id="checkout">
@@ -29,13 +33,10 @@
               <a class="nav-link active" aria-current="page" href="landing_page.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Produk</a>
+              <a class="nav-link" href="produk.html">Produk</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kategori</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Tentang Kami</a>
             </li>
           </ul>
           <form class="d-flex ms-auto">
@@ -123,27 +124,133 @@
               <td><i class="bi bi-truck me-2 fs-4"></i>Metode Pengiriman</td>
               <td>
                 <select>
-                  <option>Pilih Kurir</option>
+                  <option>Kurir</option>
                   <option>JNE</option>
                   <option>J&T</option>
                   <option>Gojek</option>
                   <option>Grab</option>
                 </select>
               </td>
-            </tr>
-            <tr>
-              <td><i class="bi bi-wallet2 me-2 fs-4"></i>Metode Pembayaran</td>
               <td>
                 <select>
-                  <option>Pilih Metode</option>
-                  <option>BRI</option>
-                  <option>BNI</option>
-                  <option>Alfamart</option>
-                  <option>Indomart</option>
+                  <option>Waktu pengiriman</option>
+                  <option>Reguler (1-3hr)</option>
+                  <option>Instant</option>
+                  <option>Next Day</option>
+                  <option>Cargo</option>
                 </select>
               </td>
             </tr>
+            <tr>
+              <td><i class="bi bi-wallet2 me-2 fs-4"></i>Metode Pembayaran</td>
+              <td></td>
+              <td></td>
+            </tr>
           </table>
+          <div class="bayar">
+            <div class="row row-cols-2 row-cols-md-4">
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="bca" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>BCA<img src="img/checkout/BCA.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="bri" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>BRI<img src="img/checkout/bri.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="bni" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>BNI<img src="img/checkout/dsa.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="mandiri" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>Mandiri<img src="img/checkout/Mandiri.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="bii" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>BII<img src="img/checkout/bii.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="gopay" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>GoPay<img src="img/checkout/gopay.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="ovo" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>OVO<img src="img/checkout/ovo.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="bca-klikpay" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>BCA KlikPay<img src="img/checkout/BCAKlikPay.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="indomart" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>Indomart<img src="img/checkout/Indomaret.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="radio" name="payment" class="card-input-element" value="alfamart" />
+                  <div class="panel panel-default card-input">
+                    <div class="panel-body">
+                      <p>Alfamart<img src="img/checkout/ALFAMART.png" alt="" /></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="total-harga bg-light">
           <table>
@@ -156,7 +263,7 @@
               <td>Rp10.000</td>
             </tr>
             <tr>
-              <td>Pajak</td>
+              <td>Biaya layanan</td>
               <td>Rp10.000</td>
             </tr>
             <tr>
@@ -180,20 +287,10 @@
       <div class="container text-center text-md-start">
         <div class="row text-center text-md-start">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-warning"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque in enim atque rerum dolore! Consequatur aliquam fugit assumenda perferendis provident. Iste molestiae quas accusamus magnam.</p>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 fw-bold text-warning">Alamat</h5>
             <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
             <p><i class="bi bi-clock me-2"></i>08:00-21:00</p>
             <p><i class="bi bi-telephone me-2"></i>0823 1234 1234</p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-warning">Keunggulan</h5>
-            <p><i class="bi bi-truck me-2"></i>Gratis Ongkir</p>
-            <p><i class="bi bi-percent me-2"></i>Banyak Discount</p>
-            <p><i class="bi bi-hand-thumbs-up me-2"></i>100% Original</p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 fw-bold text-warning">Kategori</h5>

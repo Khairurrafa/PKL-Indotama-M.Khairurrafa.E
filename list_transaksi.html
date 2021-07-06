@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/Style.css" />
+
+    <!-- icon bootststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/logo/logo-removebg-preview.png" />
+    <title>Rafa Olshop</title>
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="landing_page.html"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landing_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kategori</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2 cari" id="i-search" type="search" placeholder="Cari" aria-label="Search" />
+          </form>
+          <form class="d-flex text-end">
+            <a href="cart.html" class="btn space1" id="cart"><i class="bi bi-cart-plus"></i></a>
+            <p class="n-cart space1">3</p>
+            <a class="btn space1" id="notif"><i class="bi bi-bell"></i></a>
+            <p class="n-notif space1">1</p>
+            <a class="btn space1" id="profile" href="login_page.html"><i class="bi bi-person"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- list Transaksi -->
+    <section id="list-transaksi">
+      <div class="container">
+        <div class="row pt-5">
+          <h3>List Pesanan</h3>
+          <hr />
+        </div>
+        <!-- Control buttons -->
+        <div class="text-center">
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">tampilkan semua</button>
+            <button class="btn" onclick="filterSelection('belumbayar')">belum bayar</button>
+            <button class="btn" onclick="filterSelection('dikirim')">dikirim</button>
+            <button class="btn" onclick="filterSelection('selesai')">selesai</button>
+          </div>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="sortir-barang pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="filterDiv belumbayar" style="cursor: pointer" onclick="window.location='bukti_transaksi.html';">
+                <div class="row">
+                  <div class="col-4">
+                    <p>Id Pesanan : <a href="#" class="text-decoration-none">#06592AD4FJ6</a></p>
+                  </div>
+                  <div class="col-4">
+                    <p>Tanggal : 16 Juni 2021</p>
+                  </div>
+                  <div class="col-2 offset-2 text-center pe-4">
+                    <p class="bg-warning text-light rounded-pill">Belum Di Bayar</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="barang-list">
+                  <h5 class="ms-2">Kaos | Screamous TIME FLIES NAVY BLUE</h5>
+                  <p><small class="text-muted">Harga : Rp70.000 | jmlh : 1 | subtotal : Rp70.000</small></p>
+                </div>
+              </div>
+              <div class="filterDiv belumbayar" style="cursor: pointer" onclick="window.location='#';">
+                <div class="row">
+                  <div class="col-4">
+                    <p>Id Pesanan : <a href="#" class="text-decoration-none">#06592AD4FH5</a></p>
+                  </div>
+                  <div class="col-4">
+                    <p>Tanggal : 26 Juni 2021</p>
+                  </div>
+                  <div class="col-2 offset-2 text-center pe-4">
+                    <p class="bg-warning text-light rounded-pill">Belum Di Bayar</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="barang-list">
+                  <h5 class="ms-2">Sweater | Wanita Tanpa Lengan</h5>
+                  <p><small class="text-muted">Harga : Rp250.000 | jmlh : 1 | subtotal : Rp250.000</small></p>
+                </div>
+              </div>
+              <div class="filterDiv dikirim" style="cursor: pointer" onclick="window.location='#';">
+                <div class="row">
+                  <div class="col-4">
+                    <p>Id Pesanan : <a href="#" class="text-decoration-none">#06592AD4FC4</a></p>
+                  </div>
+                  <div class="col-4">
+                    <p>Tanggal : 25 Juni 2021</p>
+                  </div>
+                  <div class="col-2 offset-2 text-center pe-4">
+                    <p class="bg-warning text-light rounded-pill">Dikirim</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="barang-list">
+                  <h5 class="ms-2">Kaos | Stussy</h5>
+                  <p><small class="text-muted">Harga : Rp75.000 | jmlh : 1 | subtotal : Rp75.000</small></p>
+                </div>
+              </div>
+              <div class="filterDiv selesai" style="cursor: pointer" onclick="window.location='#';">
+                <div class="row">
+                  <div class="col-4">
+                    <p>Id Pesanan : <a href="#" class="text-decoration-none">#06592AD4FP9</a></p>
+                  </div>
+                  <div class="col-4">
+                    <p>Tanggal : 23 Januari 2021</p>
+                  </div>
+                  <div class="col-2 offset-2 text-center pe-4">
+                    <p class="bg-warning text-light rounded-pill">Selesai</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="barang-list">
+                  <h5 class="ms-2">Sepatu | Nike</h5>
+                  <p><small class="text-muted">Harga : Rp950.000 | jmlh : 1 | subtotal : Rp950.000</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      filterSelection('all');
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName('filterDiv');
+        if (c == 'all') c = '';
+        for (i = 0; i < x.length; i++) {
+          RemoveClass(x[i], 'show');
+          if (x[i].className.indexOf(c) > -1) AddClass(x[i], 'show');
+        }
+      }
+
+      function AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(' ');
+        arr2 = name.split(' ');
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += ' ' + arr2[i];
+          }
+        }
+      }
+
+      function RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(' ');
+        arr2 = name.split(' ');
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(' ');
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById('myBtnContainer');
+      var btns = btnContainer.getElementsByClassName('btn');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function () {
+          var current = document.getElementsByClassName('active');
+          current[0].className = current[0].className.replace(' active', '');
+          this.className += ' active';
+        });
+      }
+    </script>
+    <!-- list Transaksi End -->
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" id="footer">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Alamat</h5>
+            <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+            <p><i class="bi bi-clock me-2"></i>08:00-21:00</p>
+            <p><i class="bi bi-telephone me-2"></i>0823 1234 1234</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Kategori</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Pria</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Wanita</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Aksesoris</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Sepatu</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Toko Online</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Shopee</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Tokopedia</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Bukalapak</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Lazada</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright ©2021 All rights reserved by :</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>

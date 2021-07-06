@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/Style.css" />
+
+    <!-- icon bootststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/logo/logo-removebg-preview.png" />
+    <title>Rafa Olshop</title>
+  </head>
+  <body id="Produk">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo/logo-removebg-preview.png" alt="" class="logo" />R Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landing_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kategori">Kategori</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2 cari" id="i-search" type="search" placeholder="Cari" aria-label="Search" />
+          </form>
+          <form class="d-flex text-end">
+            <a href="cart.html" class="btn space1" id="cart"><i class="bi bi-cart-plus"></i></a>
+            <p class="n-cart space1">3</p>
+            <a class="btn space1" id="notif"><i class="bi bi-bell"></i></a>
+            <p class="n-notif space1">1</p>
+            <a class="btn space1" id="profile" href="login_page.html"><i class="bi bi-person"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Produk Pilihan -->
+    <section id="SemuaProduk" class="pt-5">
+      <div class="container">
+        <div class="row mb-3 pt-5">
+          <h3>Produk Pilihan</h3>
+          <hr />
+        </div>
+        <div class="row">
+          <div class="col-2 pb-3">
+            <div class="sticky-top">
+              <div class="t-kat">
+                <table>
+                  <tr>
+                    <th>Kategori</th>
+                  </tr>
+                  <tr>
+                    <td>Semua Produk</td>
+                  </tr>
+                  <tr>
+                    <td>Terbaru</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="t-pulau">
+                <table>
+                  <tr>
+                    <th>Filter barang</th>
+                  </tr>
+                  <tr>
+                    <td>Lokasi</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="" id="lokasi">
+                        <option value="Terdekat">Terdekat</option>
+                        <option value="Dki">DKI Jakarta</option>
+                        <option value="JawaBarat">Jawa Barat</option>
+                        <option value="JawaTimur">Jawa Timur</option>
+                        <option value="JawaTengah">Jawa Tengah</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 pb-3">
+            <div class="filter-barang">
+              <label for="urutkan" class="me-1">Filter</label>
+              <select name="" id="urutkan">
+                <option value="Terkait">Terkait</option>
+                <option value="Terbaru">Terbaru</option>
+                <option value="Termahal">Termahal</option>
+                <option value="Termurah">Termurah</option>
+                <option value="Terlaris">Terlaris</option>
+              </select>
+            </div>
+            <div class="row row-cols-2 row-cols-md-5">
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sc1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Screamous TIME FLIES NAVY BLUE</p>
+                    <a href="detail_product.html" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp200.000</span> Rp120.000</p>
+                    <p class="card-text text-truncate">Kemeja | Pria Santai</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sepatu hak1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp330.000</p>
+                    <p class="card-text text-truncate">Sepatu | Hak Wanita</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sweater1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Sweater | Wanita Tanpa Lengan</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp560.000</p>
+                    <p class="card-text text-truncate">Sepatu | Vans Old Skool</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp130.000</span> Rp75.000</p>
+                    <p class="card-text text-truncate">Kaos | Stussy</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Hitam Polos</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/jewelry1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp500.000</span> Rp350.000</p>
+                    <p class="card-text text-truncate">Gelang | Emas</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp72.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Biru</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Kemeja | Putih Hijau</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp950.000</p>
+                    <p class="card-text text-truncate">Sepatu | Nike</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sc1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Screamous TIME FLIES NAVY BLUE</p>
+                    <a href="detail_product.html" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp200.000</span> Rp120.000</p>
+                    <p class="card-text text-truncate">Kemeja | Pria Santai</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sepatu hak1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp330.000</p>
+                    <p class="card-text text-truncate">Sepatu | Hak Wanita</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sweater1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Sweater | Wanita Tanpa Lengan</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp560.000</p>
+                    <p class="card-text text-truncate">Sepatu | Vans Old Skool</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp130.000</span> Rp75.000</p>
+                    <p class="card-text text-truncate">Kaos | Stussy</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Hitam Polos</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp2.000.000</span> Rp1.600.000</p>
+                    <p class="card-text text-truncate">Sepatu | Nike</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/jewelry1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp500.000</span> Rp350.000</p>
+                    <p class="card-text text-truncate">Gelang | Emas</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp72.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Biru</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Kemeja | Putih Hijau</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp950.000</p>
+                    <p class="card-text text-truncate">Sepatu | Nike</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sc1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Screamous TIME FLIES NAVY BLUE</p>
+                    <a href="detail_product.html" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp200.000</span> Rp120.000</p>
+                    <p class="card-text text-truncate">Kemeja | Pria Santai</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sepatu hak1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp330.000</p>
+                    <p class="card-text text-truncate">Sepatu | Hak Wanita</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/sweater1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Sweater | Wanita Tanpa Lengan</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp560.000</p>
+                    <p class="card-text text-truncate">Sepatu | Vans Old Skool</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp130.000</span> Rp75.000</p>
+                    <p class="card-text text-truncate">Kaos | Stussy</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp70.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Hitam Polos</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp2.000.000</span> Rp1.600.000</p>
+                    <p class="card-text text-truncate">Sepatu | Nike</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/jewelry1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp500.000</span> Rp350.000</p>
+                    <p class="card-text text-truncate">Gelang | Emas</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/tshirt1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp72.000</p>
+                    <p class="card-text text-truncate">Kaos | Pria Biru</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shirt2.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal">Rp300.000</span> Rp250.000</p>
+                    <p class="card-text text-truncate">Kemeja | Putih Hijau</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col pt-2">
+                <div class="card">
+                  <img src="img/p_pilihan/shoes3.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body cb-pilihan">
+                    <p class="harga-dc fw-bold text-truncate"><span class="text-decoration-line-through harga-normal"></span> Rp950.000</p>
+                    <p class="card-text text-truncate">Sepatu | Nike</p>
+                    <a href="#" class="btn btn-primary btn-pp">Lihat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Pilihan End -->
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" id="footer">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Alamat</h5>
+            <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+            <p><i class="bi bi-clock me-2"></i>08:00-21:00</p>
+            <p><i class="bi bi-telephone me-2"></i>0823 1234 1234</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Kategori</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Pria</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Pakaian Wanita</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Aksesoris</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none">Sepatu</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-warning">Toko Online</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Shopee</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Tokopedia</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Bukalapak</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"><i class="bi bi-shop-window me-2"></i>Lazada</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright ©2021 All rights reserved by :</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px"><i class="bi bi-google"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>
