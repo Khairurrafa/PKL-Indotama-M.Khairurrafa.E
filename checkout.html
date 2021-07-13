@@ -45,8 +45,7 @@
           <form class="d-flex text-end">
             <a href="cart.html" class="btn space1" id="cart"><i class="bi bi-cart-plus"></i></a>
             <p class="n-cart space1">3</p>
-            <a class="btn space1" id="notif"><i class="bi bi-bell"></i></a>
-            <p class="n-notif space1">1</p>
+            <a href="list_transaksi.html" class="btn space1" id="list"><i class="bi bi-list-check"></i></a>
             <a class="btn space1" id="profile" href="login_page.html"><i class="bi bi-person"></i></a>
           </form>
         </div>
@@ -122,22 +121,14 @@
           <table>
             <tr>
               <td><i class="bi bi-truck me-2 fs-4"></i>Metode Pengiriman</td>
-              <td>
+              <td colspan="2">
                 <select>
-                  <option>Kurir</option>
-                  <option>JNE</option>
-                  <option>J&T</option>
-                  <option>Gojek</option>
-                  <option>Grab</option>
-                </select>
-              </td>
-              <td>
-                <select>
-                  <option>Waktu pengiriman</option>
-                  <option>Reguler (1-3hr)</option>
-                  <option>Instant</option>
-                  <option>Next Day</option>
-                  <option>Cargo</option>
+                  <option>Reguler (1-3hr)-JNE</option>
+                  <option>Express (1-2hr)-JNE</option>
+                  <option>Reguler (1-3hr)-J&T</option>
+                  <option>Express (1-2hr)-J&T</option>
+                  <option>Instant (1hr)-Gojek</option>
+                  <option>Instant (1hr)-Grab</option>
                 </select>
               </td>
             </tr>
@@ -224,7 +215,7 @@
                   <input type="radio" name="payment" class="card-input-element" value="bca-klikpay" />
                   <div class="panel panel-default card-input">
                     <div class="panel-body">
-                      <p>BCA KlikPay<img src="img/checkout/BCAKlikPay.png" alt="" /></p>
+                      <p>BCA KPay<img src="img/checkout/BCAKlikPay.png" alt="" /></p>
                     </div>
                   </div>
                 </label>
@@ -264,11 +255,11 @@
             </tr>
             <tr>
               <td>Biaya layanan</td>
-              <td>Rp10.000</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Total</td>
-              <td>Rp900.000</td>
+              <td>Rp890.000</td>
             </tr>
             <tr>
               <td></td>
